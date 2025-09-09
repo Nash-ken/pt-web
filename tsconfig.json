@@ -24,7 +24,6 @@
     "isolatedModules": true,
     "verbatimModuleSyntax": true
   },
-  "include": ["src/**/*.d.ts", "src/**/.ts", "src/**/.svelte"],
   "exclude": ["node_modules", "dist", ".svelte-kit"]
   // Path aliases are handled by https://svelte.dev/docs/kit/configuration#alias
   // except $lib which is handled by https://svelte.dev/docs/kit/configuration#files

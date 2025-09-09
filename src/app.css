@@ -1,5 +1,31 @@
 @import "tailwindcss";
 
-body {
-    @apply bg-black;
+:root {
+    --background: #210002;
+    --secondary: #481e14;
+    --tertiary: #9b3922;
+    --accent: #ffaf1b;
+
+    --card-background: #181818;
+}
+
+@theme inline {
+    --color-background: var(--background);
+    --color-secondary: var(--secondary);
+    --color-tertiary: var(--tertiary);
+    --color-accent: var(--accent);
+
+    --color-card: var(--card-background);
+}
+
+@layer base {
+    body {
+        @apply bg-background;
+    }
+}
+
+@layer components {
+    .card {
+        @apply bg-card w-fit p-3 rounded-lg;
+    }
 }
